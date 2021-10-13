@@ -19,7 +19,7 @@ export default function Index() {
                currency={'ETH'}
            />
 
-           <User name={'krisi'} info={'based'}  verified={true} />
+           <User name={'krisi'} info={'based'} verified={true} />
        </div>
     )
 }
