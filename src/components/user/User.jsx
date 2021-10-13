@@ -6,14 +6,14 @@ export default function User({
      name = '',
      info= '',
      avatar = '',
-     size = 55,
-     verified = false
+     // size = 55,
+     // verified = false
 }) {
     return (
         <div className={styles.user}>
             <div className={styles.name}>{name}</div>
             <div className={styles.info}>{info}</div>
-            <Avatar url={avatar} size={size} verified={verified} />
+            <Avatar url={avatar} />
         </div>
     )
 }
