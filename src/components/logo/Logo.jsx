@@ -11,13 +11,13 @@ export default function Logo({ type = 'default' }) {
             type === 'default' ? (
             <div>
                 <img
-                    src={'/assets/images/logo.svg'}>
+                    src={'/images/logo.svg'}>
                 </img>
             </div>
         ) : (
            type === 'muted' ? (
                <img
-                   src={'/assets/images/logo-muted.svg'}>
+                   src={'/images/logo-muted.svg'}>
                </img>
            ) : null
         )
