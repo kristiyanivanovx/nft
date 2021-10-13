@@ -1,6 +1,6 @@
 import * as React from "react";
 import Avatar from "../avatar/Avatar";
-import styles from 'User.module.scss';
+import styles from './User.module.scss';
 
 export default function User({
      name = '',
@@ -11,14 +11,13 @@ export default function User({
 }) {
     return (
         <>
-            <div className={'user'}>
-                <title className={'name'}>{name}</title>
+            <div className={styles.user}>
+                <title className={styles.name}>{name}</title>
                 <hr/>
-                <p className={'info'}>{info}</p>
+                <p className={styles.info}>{info}</p>
                 <hr/>
                 <Avatar avatar={avatar} size={size} verified={verified} />
             </div>
-
         </>
     )
 }
