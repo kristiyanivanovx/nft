@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Link from "../../src/components/link/Link";
 import Logo from "../../src/components/logo/Logo";
-import Header from "../../src/components/header/Header";
 
 export default function About() {
   return (
