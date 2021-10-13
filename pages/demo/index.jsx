@@ -18,8 +18,8 @@ export default function Index() {
                price={'13'}
                currency={'ETH'}
            />
-           
-           <User name={'krisi'} info={'based'}  />
+
+           <User name={'krisi'} info={'based'}  verified={true} />
        </div>
     )
 }
