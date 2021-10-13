@@ -10,7 +10,6 @@ export default function User({
      verified = false
 }) {
     return (
-        <>
             <div className={styles.user}>
                 <title className={styles.name}>{name}</title>
                 <hr/>
@@ -18,6 +17,5 @@ export default function User({
                 <hr/>
                 <Avatar avatar={avatar} size={size} verified={verified} />
             </div>
-        </>
     )
 }
