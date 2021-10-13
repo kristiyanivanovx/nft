@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Link from "../../src/components/link/Link";
-import Logo from "../Logo/Logo";
+import Logo from "../logo/Logo";
 
 export default function About() {
   return (
