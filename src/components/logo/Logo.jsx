@@ -10,20 +10,15 @@ export default function Logo({ type = 'default' }) {
         (
             type === 'default' ? (
             <div>
-                <Image
-                    width={100}
-                    height={100}
+                <img
                     src={'/assets/images/logo.svg'}>
-                </Image>
+                </img>
             </div>
         ) : (
            type === 'muted' ? (
-               <Image
-                   width={100}
-                   height={100}
+               <img
                    src={'/assets/images/logo-muted.svg'}>
-
-               </Image>
+               </img>
            ) : null
         )
     ));

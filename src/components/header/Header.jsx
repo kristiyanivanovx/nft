@@ -23,7 +23,7 @@ export default function Header({  }) {
                 <Grid item xs={2} sm={4} md={4} >
                    <Item>
                        <Logo />
-                       <Logo type={'muted'}/>
+                       {/*<Logo type={'muted'}/>*/}
                    </Item>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4} >
