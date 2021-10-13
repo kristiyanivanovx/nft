@@ -22,7 +22,8 @@ export default function Header({  }) {
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                 <Grid item xs={2} sm={4} md={4} >
                    <Item>
-                       <Logo/>
+                       <Logo />
+                       <Logo type={'muted'}/>
                    </Item>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4} >
