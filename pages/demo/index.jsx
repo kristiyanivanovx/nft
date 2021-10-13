@@ -9,16 +9,16 @@ export default function Index() {
 
     return (
        <div>
-           <Header />
-           <MyCard
-               name={'Clock'}
-               likes={'1.1K'}
-               mediaUrl={'/images/nft.jpg'}
-               user={avatar}
-               price={'13'}
-               currency={'ETH'}
-           />
-           <User/>
+           {/*<Header />*/}
+           {/*<MyCard*/}
+           {/*    name={'Clock'}*/}
+           {/*    likes={'1.1K'}*/}
+           {/*    mediaUrl={'/images/nft.jpg'}*/}
+           {/*    user={avatar}*/}
+           {/*    price={'13'}*/}
+           {/*    currency={'ETH'}*/}
+           {/*/>*/}
+           <User name={'kirs'} info={'based'} verified={true} />
        </div>
     )
 }

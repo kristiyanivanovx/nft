@@ -4,17 +4,15 @@ import styles from './User.module.scss';
 
 export default function User({
      name = '',
-     info='',
-     avatar ='',
+     info= '',
+     avatar = '',
      size = 55,
      verified = false
 }) {
     return (
         <div className={styles.user}>
-            <title className={styles.name}>{name}</title>
-            <hr/>
-            <p className={styles.info}>{info}</p>
-            <hr/>
+            <div className={styles.name}>{name}</div>
+            <div className={styles.info}>{info}</div>
             <Avatar avatar={avatar} size={size} verified={verified} />
         </div>
     )
