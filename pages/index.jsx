@@ -1,5 +1,5 @@
 import Example from "../src/components/example/Example";
-import Logo from "./logo/Logo";
+import Logo from "../src/components/logo/Logo";
 import * as React from "react";
 
 export default function Index() {
