@@ -6,11 +6,8 @@ export default function User({
     name = '',
     info= '',
     avatar = '',
-
-    size ,
-    // size = 55,
-    verified
-    // verified = false
+    size = 55,
+    verified = false
 }) {
     return (
         <div className={styles.user}>
