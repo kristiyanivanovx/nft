@@ -10,12 +10,12 @@ export default function User({
      verified = false
 }) {
     return (
-            <div className={styles.user}>
-                <title className={styles.name}>{name}</title>
-                <hr/>
-                <p className={styles.info}>{info}</p>
-                <hr/>
-                <Avatar avatar={avatar} size={size} verified={verified} />
-            </div>
+        <div className={styles.user}>
+            <title className={styles.name}>{name}</title>
+            <hr/>
+            <p className={styles.info}>{info}</p>
+            <hr/>
+            <Avatar avatar={avatar} size={size} verified={verified} />
+        </div>
     )
 }
