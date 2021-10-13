@@ -18,7 +18,7 @@ export default function Index() {
            {/*    price={'13'}*/}
            {/*    currency={'ETH'}*/}
            {/*/>*/}
-           <User name={'kirs'} info={'based'} verified={true} />
+           <User name={'krisi'} avatar={'/images/avatar.png'} info={'based'} verified={true} />
        </div>
     )
 }

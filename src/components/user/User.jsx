@@ -13,7 +13,7 @@ export default function User({
         <div className={styles.user}>
             <div className={styles.name}>{name}</div>
             <div className={styles.info}>{info}</div>
-            <Avatar avatar={avatar} size={size} verified={verified} />
+            <Avatar url={avatar} size={size} verified={verified} />
         </div>
     )
 }
