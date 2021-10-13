@@ -8,6 +8,7 @@ import styled from "@emotion/styled";
 import Button from "@mui/material/Button";
 import Link from "../link/Link";
 import {IconButton, InputAdornment, TextField} from "@mui/material";
+import styles from './Header.module.scss';
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -18,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Header({  }) {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} className={styles.search__bar}>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                 <Grid item xs={2} sm={4} md={4} >
                    <Item>
@@ -32,7 +33,7 @@ export default function Header({  }) {
                             // label="With normal TextField"
                             InputProps={{
                                 endAdornment: (
-                                    <InputAdornment>
+                                    <InputAdornment position={'absolute'}>
                                         <IconButton>
                                             <SearchIcon />
                                         </IconButton>
