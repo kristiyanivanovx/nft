@@ -1,7 +1,7 @@
 import Header from "../../src/components/header/Header";
 import * as React from "react";
 import Avatar from '../../src/components/avatar/Avatar';
-import MyCard from '../../src/components/card/Card';
+import MyCard from '../../src/components/card/MyCard';
 import User from '../../src/components/user/User';
 
 export default function Index() {
