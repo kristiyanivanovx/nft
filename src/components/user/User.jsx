@@ -7,8 +7,11 @@ export default function User({
     info= '',
     avatar = '',
     size = 55,
-    verified = false
+    verified
 }) {
+    if (!verified) {
+        verified = false;
+    }
     return (
         <div className={styles.user}>
             <div className={styles.name}>{name}</div>
