@@ -1,7 +1,7 @@
 import Header from "../../src/components/header/Header";
 import * as React from "react";
 import Avatar from '../../src/components/avatar/Avatar';
-import MyCard from '../../src/components/card/MyCard';
+import Card from '../../src/components/card/Card';
 import User from '../../src/components/user/User';
 
 export default function Index() {
@@ -10,7 +10,8 @@ export default function Index() {
     return (
        <div>
            <Header />
-           <MyCard
+           <hr/>
+           <Card
                name={'Clock'}
                likes={'1.1K'}
                mediaUrl={'/images/nft.jpg'}
@@ -18,7 +19,7 @@ export default function Index() {
                price={'13'}
                currency={'ETH'}
            />
-
+            <hr/>
            <User name={'krisi'} info={'based'} verified={true} />
            <User  />
        </div>
