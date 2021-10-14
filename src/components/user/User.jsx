@@ -3,15 +3,17 @@ import Avatar from "../avatar/Avatar";
 import styles from './User.module.scss';
 
 export default function User({
-    name = '',
-    info= '',
-    avatar = '',
-    size = 55,
-    verified
+    // size = 55,
+    // name = '',
+    // info= '',
+    // avatar = '',
+    // verified = false,
+     size,
+     name,
+     info,
+     avatar,
+     verified ,
 }) {
-    if (!verified) {
-        verified = false;
-    }
     return (
         <div className={styles.user}>
             <div className={styles.name}>{name}</div>
@@ -19,4 +21,12 @@ export default function User({
             <Avatar url={avatar} size={size} verified={verified} />
         </div>
     )
+}
+
+User.defaultProps = {
+    size: 55,
+    name: '',
+    info: '',
+    avatar: '',
+    verified: false,
 }

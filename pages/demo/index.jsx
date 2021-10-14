@@ -20,6 +20,7 @@ export default function Index() {
            />
 
            <User name={'krisi'} info={'based'} verified={true} />
+           <User  />
        </div>
     )
 }
