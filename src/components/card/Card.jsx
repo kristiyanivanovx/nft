@@ -9,6 +9,9 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import {Chip} from "@mui/material";
+import Avatar from "../avatar/Avatar";
+import styles from './Card.module.scss';
+import millify from "millify";
 
 // const ExpandMore = styled((props) => {
 //     const { expand, ...other } = props;
@@ -21,13 +24,20 @@ import {Chip} from "@mui/material";
 //     }),
 // }));
 
-export default function Card({ name, likes, mediaUrl, user, price, currency }) {
+export default function Card({ name, likes = 0, mediaUrl, user, price, currency }) {
+    const { verified, avatarUrl} = user;
+    const avatar = <Avatar verified={verified} url={avatarUrl} />
+
+    const millifiedLikes = millify(likes, {
+        units: ["", "k", "M", "B"],
+        // precision: 2
+    });
 
     return (
        <>
            <MuiCard sx={{ maxWidth: 345 }} className={'card'}>
                <CardHeader
-                   avatar={user}
+                   avatar={avatar}
                    action={
                        <IconButton aria-label="settings">
                            <MoreVertIcon />
@@ -35,7 +45,7 @@ export default function Card({ name, likes, mediaUrl, user, price, currency }) {
                    }
                />
                <CardMedia
-                   className={'media'}
+                   className={styles.media}
                    component="img"
                    height="194"
                    image={mediaUrl}
@@ -55,11 +65,15 @@ export default function Card({ name, likes, mediaUrl, user, price, currency }) {
                         {name}{' '}
                     </span>
                        <span className={'price'}>
-                       {price}{' '}{currency}
+                       ~{price}{' '}{currency}
                     </span>
                    </div>
                    <div>
-                       <Chip label={likes} likeIcon={<FavoriteIcon />} className={'likes'} variant="outlined" clickable />
+                       <Chip
+                           label={millifiedLikes}
+                           // likeIcon={<FavoriteIcon />}
+                           className={'likes'}
+                           variant="outlined" clickable />
                    </div>
                </CardActions>
            </MuiCard>

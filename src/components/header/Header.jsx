@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Logo from "../logo/Logo";
-import SearchIcon from "@mui/icons-material/Search";
+import SearchIcon from "@mui/icons-material";
 import * as React from "react";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -10,12 +10,12 @@ import Link from "../link/Link";
 import {IconButton, InputAdornment, TextField} from "@mui/material";
 import styles from './Header.module.scss';
 
-const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+// const Item = styled(Paper)(({ theme }) => ({
+//     ...theme.typography.body2,
+//     padding: theme.spacing(2),
+//     textAlign: 'center',
+//     color: theme.palette.text.secondary,
+// }));
 
 export default function Header({  }) {
     return (
