@@ -1,6 +1,7 @@
 import * as React from "react";
 import Trending from "../../src/components/trending/Trending";
 import Auctions from "../../src/components/auctions/Auctions";
+import Footer from "../../src/components/footer/Footer";
 
 export default function Index() {
     const cards = [
@@ -57,7 +58,8 @@ export default function Index() {
     return (
         <div>
             {/*<Trending cards={cards} />*/}
-            <Auctions cards={auctCards} />
+            {/*<Auctions cards={auctCards} />*/}
+            <Footer/>
         </div>
     )
 }
