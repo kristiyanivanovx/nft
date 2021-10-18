@@ -11,8 +11,11 @@ import {Chip} from "@mui/material";
 import Avatar from "../avatar/Avatar";
 import styles from './Card.module.scss';
 import millify from "millify";
+import Countdown from 'react-countdown';
 
-export default function Card({ name, likes = 0, mediaUrl, user, price, currency }) {
+const renderer = ({ hours, minutes, seconds, completed }) => <span>{hours}:{minutes}:{seconds}</span>
+
+export default function Card({ name, likes = 0, mediaUrl, user, price, currency, timeLeft }) {
     const { verified, avatarUrl} = user;
     const avatar = <Avatar verified={verified} url={avatarUrl} />
 
@@ -39,6 +42,17 @@ export default function Card({ name, likes = 0, mediaUrl, user, price, currency 
                    image={mediaUrl}
                    alt="nft"
                />
+               {
+                   (timeLeft) ? (
+                       <div>
+                           <img className={styles.badge} src="" alt=""/>
+                           <Countdown
+                               date={Date.now() + timeLeft}
+                               renderer={renderer}
+                           />
+                       </div>
+                   ) : null
+               }
                <CardContent>
                    <Typography variant="body2" color="text.secondary">
                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.

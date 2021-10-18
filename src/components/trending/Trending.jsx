@@ -23,7 +23,9 @@ export default function Trending({ cards = []}) {
                                     mediaUrl={card.mediaUrl}
                                     user={card.user}
                                     price={card.price}
-                                    currency={card.currency}/>
+                                    currency={card.currency}
+                                    timeLeft={card.timeLeft}
+                                />
                             </Grid>
                         ))
                     }

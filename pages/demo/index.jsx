@@ -4,7 +4,7 @@ import Trending from "../../src/components/trending/Trending";
 export default function Index() {
     let cards = [
         {
-            name: 'da',
+            name: 'Clock',
             likes: 1234,
             mediaUrl: '/images/nft.jpg',
             user: {
@@ -12,19 +12,10 @@ export default function Index() {
                 avatarUrl: '/images/avatar.png'
             },
             price: '33.7',
-            currency: 'BTC'
+            currency: 'BTC',
+            timeLeft: 13345,
         },
-        {
-            name: 'da',
-            likes: 1234,
-            mediaUrl: '/images/nft.jpg',
-            user: {
-                verified: true,
-                avatarUrl: '/images/avatar.png'
-            },
-            price: '33.7',
-            currency: 'BTC'
-        }
+
     ]
     return (
         <div>
