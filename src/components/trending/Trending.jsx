@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import Link from "../link/Link";
 import Box from "@mui/material/Box";
 
-export default function Trending() {
+export default function Trending({ cards = []}) {
     let user = {
         verified : true,
         avatarUrl: '/images/logo.svg'

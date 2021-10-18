@@ -61,12 +61,13 @@ export default function Card({ name, likes = 0, mediaUrl, user, price, currency 
                </CardContent>
                <CardActions disableSpacing>
                    <div>
-                    <span aria-label="title" className={'title'}>
-                        {name}{' '}
-                    </span>
+                       <span aria-label="title" className={'title'}>
+                            {name}
+                       </span>
+                       {' '}
                        <span className={'price'}>
-                       ~{price}{' '}{currency}
-                    </span>
+                            ~{price}{' '}{currency}
+                       </span>
                    </div>
                    <div>
                        <Chip
