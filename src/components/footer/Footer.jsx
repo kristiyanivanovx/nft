@@ -14,21 +14,21 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Footer() {
     return (
-        <Grid>
-            <Grid container spacing={{ xs: 1, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                <Item>
+        <Grid container spacing={{ xs: 1, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            <Grid item  >
+                {/*<Item>*/}
                     <Logo/>
-                </Item>
+                {/*</Item>*/}
             </Grid>
-            <Grid container spacing={{ xs: 1, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                <Item>
+            <Grid item >
+                {/*<Item>*/}
                     da
-                </Item>
+                {/*</Item>*/}
             </Grid>
-            <Grid container spacing={{ xs: 1, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                <Item>
+            <Grid item >
+                {/*<Item>*/}
                     ne
-                </Item>
+                {/*</Item>*/}
             </Grid>
         </Grid>
     )
