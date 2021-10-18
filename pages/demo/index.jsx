@@ -1,8 +1,9 @@
 import * as React from "react";
 import Trending from "../../src/components/trending/Trending";
+import Auctions from "../../src/components/auctions/Auctions";
 
 export default function Index() {
-    let cards = [
+    const cards = [
         {
             name: 'Clock',
             likes: 1234,
@@ -15,11 +16,48 @@ export default function Index() {
             currency: 'BTC',
             timeLeft: 13345,
         },
+    ];
 
-    ]
+    const auctCards = [
+        {
+            name: 'Clock',
+            user: {
+                verified: true,
+                avatarUrl: '/images/avatar.png'
+            },
+            mediaUrl: '/images/nft.jpg',
+            price: '33.7',
+            currency: 'BTC',
+            timeLeft: 13345,
+        },
+        {
+            name: 'Clock',
+            user: {
+                verified: true,
+                avatarUrl: '/images/avatar.png'
+            },
+            mediaUrl: '/images/nft.jpg',
+            price: '33.7',
+            currency: 'BTC',
+            timeLeft: 13345,
+        },
+        {
+            name: 'Clock',
+            user: {
+                verified: true,
+                avatarUrl: '/images/avatar.png'
+            },
+            mediaUrl: '/images/nft.jpg',
+            price: '33.7',
+            currency: 'BTC',
+            timeLeft: 13345,
+        },
+    ];
+
     return (
         <div>
-            <Trending cards={cards} />
+            {/*<Trending cards={cards} />*/}
+            <Auctions cards={auctCards} />
         </div>
     )
 }
