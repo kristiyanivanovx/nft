@@ -11,18 +11,6 @@ import {Chip} from "@mui/material";
 import Avatar from "../avatar/Avatar";
 import styles from './Card.module.scss';
 import millify from "millify";
-import FavoriteIcon from '@mui/icons-material/Favorite';
-
-// const ExpandMore = styled((props) => {
-//     const { expand, ...other } = props;
-//     return <IconButton {...other} />;
-// })(({ theme, expand }) => ({
-//     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-//     marginLeft: 'auto',
-//     transition: theme.transitions.create('transform', {
-//         duration: theme.transitions.duration.shortest,
-//     }),
-// }));
 
 export default function Card({ name, likes = 0, mediaUrl, user, price, currency }) {
     const { verified, avatarUrl} = user;
@@ -35,7 +23,7 @@ export default function Card({ name, likes = 0, mediaUrl, user, price, currency 
 
     return (
        <div>
-           <MuiCard sx={{ maxWidth: 345 }} className={'card'}>
+           <MuiCard sx={{ maxWidth: 345 }} className={styles.card}>
                <CardHeader
                    avatar={avatar}
                    action={
@@ -61,11 +49,11 @@ export default function Card({ name, likes = 0, mediaUrl, user, price, currency 
                </CardContent>
                <CardActions disableSpacing>
                    <div>
-                       <span aria-label="title" className={'title'}>
+                       <span className={styles.title}>
                             {name}
                        </span>
                        {' '}
-                       <span className={'price'}>
+                       <span className={styles.price}>
                             ~{price}{' '}{currency}
                        </span>
                    </div>

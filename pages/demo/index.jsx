@@ -1,32 +1,34 @@
-import Header from "../../src/components/header/Header";
 import * as React from "react";
-import Avatar from '../../src/components/avatar/Avatar';
-import Card from '../../src/components/card/Card';
-import User from '../../src/components/user/User';
 import Trending from "../../src/components/trending/Trending";
 
 export default function Index() {
-    let avatar = <Avatar url={'/images/avatar.png'} />;
-
+    let cards = [
+        {
+            name: 'da',
+            likes: 1234,
+            mediaUrl: '/images/nft.jpg',
+            user: {
+                verified: true,
+                avatarUrl: '/images/avatar.png'
+            },
+            price: '33.7',
+            currency: 'BTC'
+        },
+        {
+            name: 'da',
+            likes: 1234,
+            mediaUrl: '/images/nft.jpg',
+            user: {
+                verified: true,
+                avatarUrl: '/images/avatar.png'
+            },
+            price: '33.7',
+            currency: 'BTC'
+        }
+    ]
     return (
         <div>
-            <Trending/>
+            <Trending cards={cards} />
         </div>
-
-       // <div>
-       //     <Header />
-       //     <hr/>
-       //     <Card
-       //         name={'Clock'}
-       //         likes={'1.1K'}
-       //         mediaUrl={'/images/nft.jpg'}
-       //         user={avatar}
-       //         price={'13'}
-       //         currency={'ETH'}
-       //     />
-       //      <hr/>
-       //     <User name={'krisi'} info={'based'} verified={true} />
-       //     <User  />
-       // </div>
     )
 }
