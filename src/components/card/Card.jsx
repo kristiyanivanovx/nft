@@ -6,12 +6,12 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import {Chip} from "@mui/material";
 import Avatar from "../avatar/Avatar";
 import styles from './Card.module.scss';
 import millify from "millify";
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 // const ExpandMore = styled((props) => {
 //     const { expand, ...other } = props;
@@ -34,7 +34,7 @@ export default function Card({ name, likes = 0, mediaUrl, user, price, currency 
     });
 
     return (
-       <>
+       <div>
            <MuiCard sx={{ maxWidth: 345 }} className={'card'}>
                <CardHeader
                    avatar={avatar}
@@ -77,6 +77,6 @@ export default function Card({ name, likes = 0, mediaUrl, user, price, currency 
                    </div>
                </CardActions>
            </MuiCard>
-       </>
+       </div>
     );
 }
