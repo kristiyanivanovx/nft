@@ -1,7 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Step from "../step/Step";
-import Card from "../card/Card";
 import Grid from "@mui/material/Grid";
 import styles from "../header/Header.module.scss";
 import Box from "@mui/material/Box";
