@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Step.module.scss';
+import styles from '../how/Step.module.scss';
 
 const Step = ({ number, title, description }) => {
     return (

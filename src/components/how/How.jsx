@@ -6,11 +6,15 @@ import Grid from "@mui/material/Grid";
 import styles from "../header/Header.module.scss";
 import Box from "@mui/material/Box";
 
-const How = ({title, description, items = [], link}) => {
+const How = ({ title, description, items = [], link }) => {
     return (
         <Box sx={{ flexGrow: 1 }} className={styles.search__bar}>
-            <h1>{title}</h1>
-            <p>{description}</p>
+            <h1>
+                {title}
+            </h1>
+            <p>
+                {description}
+            </p>
             <div>
                 <a className={'button'} href={link}>Learn more</a>
             </div>
