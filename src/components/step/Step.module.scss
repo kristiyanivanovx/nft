@@ -1,0 +1,5 @@
+@use "../../styles/colors";
+
+.blurred {
+   background-color: rgba(colors.$primary_main, 10%);
+}
