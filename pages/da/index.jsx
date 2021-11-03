@@ -24,7 +24,6 @@ const Index = props => {
         title: ' 1 title',
         description: ' 1 description',
         link: 'localhost',
-        items: steps
     }
 
     return (
