@@ -1,6 +1,4 @@
-// noinspection JSVoidFunctionReturnValueUsed
-
-import React from "react";
+import React, {useState} from "react";
 import _ from 'lodash';
 import Collector from "./Collector";
 import Grid from "@mui/material/Grid";
@@ -18,11 +16,11 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function TopCollectors ({ collectors }) {
+    const [filter, setFilter] = useState('');
+
     let withIds = [];
     collectors.map((c, idx) => withIds.push({...c, id: idx}));
     let split = _.chunk(withIds, 3);
-
-    const [filter, setFilter] = React.useState('');
 
     const handleChange = (event) => {
         setFilter(event.target.value);
