@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import How from "../../src/components/how/How";
 import Featured from "../../src/components/featured/Featured";
 
 const Index = props => {

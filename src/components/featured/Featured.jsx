@@ -17,15 +17,30 @@ export default function Featured ({ items=[] })  {
         router.push(href);
     }
 
+    const style = {
+        // grid-column-end:span 3;
+        // grid-row-end:span 2;
+        gridRowEnd: "span 2",
+        gridColumnEnd: "span 3",
+    }
+
     return (
         <Container maxWidth="sm">
             <ImageList sx={{ width: 1000, height: 900 }} cols={3} rowHeight={164}>
                 {items.map((item, idx) => (
                     <ImageListItem key={item.image}>
-                        <a href={item.href} onClick={() => handleClick(item.href)}>
+                        <a href={item.href} onClick={() => handleClick(item.href)}
+                           // style={style}
+                            style={{
+                                gridColumnEnd: "span 3",
+                                gridRowEnd: "span 2",
+                            }}
+                        >
                             <img
-                                width={idx === 0 ? '300' : '250'}
-                                height={idx === 0 ? '300' : '250'}
+                                width={'150'}
+                                height={'150'}
+                                // width={idx === 0 ? '300' : '250'}
+                                // height={idx === 0 ? '300' : '250'}
                                 src={item.image}
                                 alt={item.title}
                             />
