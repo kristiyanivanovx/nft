@@ -55,10 +55,8 @@ const Index = props => {
     ]
     return (
         <div>
-            123
             <Featured items={items}/>
             {/*<Featured {...items}/>*/}
-
         </div>
         // <How {...how} />
     );
