@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import _ from 'lodash';
+import chunk from 'lodash.chunk';
 import Collector from "./Collector";
 import Grid from "@mui/material/Grid";
 import {Container, FormControl, MenuItem, Select} from "@mui/material";
@@ -10,7 +10,7 @@ export default function TopCollectors ({ collectors }) {
 
     let withIds = [];
     collectors.map((c, idx) => withIds.push({...c, id: idx}));
-    let split = _.chunk(withIds, 3);
+    let split = chunk(withIds, 3);
 
     const handleChange = (event) => {
         setFilter(event.target.value);
