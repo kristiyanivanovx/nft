@@ -1,20 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import { chunk } from 'lodash';
 import Collector from "./Collector";
 import Grid from "@mui/material/Grid";
 import {Container, FormControl, MenuItem, Select} from "@mui/material";
 import Box from "@mui/material/Box";
 
-export default function TopCollectors ({ collectors }) {
-    const [filter, setFilter] = useState('');
+export default function TopCollectors({ collectors }) {
+    // const [filter, setFilter] = useState('');
+    // const handleChange = (event) => setFilter(event.target.value);
 
     let withIds = [];
     collectors.map((c, idx) => withIds.push({...c, id: idx}));
     let split = chunk(withIds, 3);
-
-    const handleChange = (event) => {
-        setFilter(event.target.value);
-    };
 
     return (
         <Container maxWidth="xl">
@@ -26,8 +23,8 @@ export default function TopCollectors ({ collectors }) {
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
                         label="time"
-                        value={filter || 'week'}
-                        onChange={handleChange}
+                        // value={filter || 'week'}
+                        // onChange={handleChange}
                     >
                         <MenuItem value={'week'}>This week</MenuItem>
                         <MenuItem value={'month'}>This month</MenuItem>
