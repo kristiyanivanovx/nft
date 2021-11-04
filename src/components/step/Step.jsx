@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../how/Step.module.scss';
 
-const Step = ({ number, title, description }) => {
+function Step  ({ number, title, description })  {
     return (
         <div className={styles.blurred}>
             <h3>
@@ -14,6 +14,6 @@ const Step = ({ number, title, description }) => {
             <span>{number}</span>
         </div>
     );
-};
+}
 
 export default Step;

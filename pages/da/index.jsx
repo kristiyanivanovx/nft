@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import How from "../../src/components/how/How";
 
-
-
 const Index = props => {
     const steps = [
         {
@@ -24,6 +22,7 @@ const Index = props => {
         title: ' 1 title',
         description: ' 1 description',
         link: 'localhost',
+        items: steps
     }
 
     return (
