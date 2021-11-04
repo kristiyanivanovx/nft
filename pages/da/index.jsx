@@ -1,6 +1,6 @@
 import React from 'react';
 import Featured from "../../src/components/featured/Featured";
-import CollectorsColumn from "../../src/components/collectors/CollectorsColumn";
+import CollectorColumn from "../../src/components/collectors/CollectorColumn";
 
 const Index = props => {
     const steps = [
@@ -88,7 +88,7 @@ const Index = props => {
     ]
     return (
         <div>
-            <CollectorsColumn items={items}/>
+            <CollectorColumn items={items}/>
             {/*<Featured items={items}/>*/}
             {/*<Featured {...items}/>*/}
         </div>

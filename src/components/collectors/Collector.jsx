@@ -1,11 +1,12 @@
 import User from "../user/User";
 import React from "react";
+import styles from './CollectorColumn.module.scss';
 
-export default function Collector ({ item, isLight }) {
+export default function Collector ({ item, type }) {
+    let className = type ? styles.light : '';
+
     return (
-        <div style={
-            isLight ? {backgroundColor: 'rgba(170,232,215,0.6)'} : {}
-        }>
+        <div className={className}>
             <span>id: {item.id} | </span>
             <span>NFTs count: {item.nftsCount}</span>
             <hr/>
