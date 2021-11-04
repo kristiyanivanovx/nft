@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import chunk from 'lodash.chunk';
+import { chunk } from 'lodash';
 import Collector from "./Collector";
 import Grid from "@mui/material/Grid";
 import {Container, FormControl, MenuItem, Select} from "@mui/material";
