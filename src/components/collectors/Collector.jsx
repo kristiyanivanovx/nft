@@ -3,7 +3,7 @@ import React from "react";
 import styles from './CollectorColumn.module.scss';
 
 export default function Collector ({ item, type }) {
-    let className = type ? styles.light : '';
+    let className = type === 'light' ? styles.light : '';
 
     return (
         <div className={className}>

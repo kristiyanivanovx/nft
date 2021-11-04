@@ -6,7 +6,7 @@ export default function CollectorColumn ({ items = [] }) {
         <div className={'container'}>
             {
                 items.map((item, index) => (
-                    <Collector item={item} type={(index) % 2 === 0} />
+                    <Collector item={item} type={(index) % 2 === 0 ? 'light' : 'null'} />
                 ))
             }
         </div>
