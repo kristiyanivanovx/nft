@@ -6,14 +6,13 @@ import Button from "@mui/material/Button";
 import Link from "../link/Link";
 import Logo from "../logo/Logo";
 import ImageList from '@mui/material/ImageList';
-import {ImageListItem} from "@mui/material";
+import ImageListItem from "@mui/material/ImageListItem";
 import { useRouter } from 'next/router'
 
 export default function Featured ({ items=[] })  {
     const router = useRouter()
 
-    const handleClick = (e, href) => {
-        e.preventDefault();
+    const handleClick = (href) => {
         router.push(href);
     }
 
@@ -28,23 +27,16 @@ export default function Featured ({ items=[] })  {
         <Container maxWidth="sm">
             <ImageList sx={{ width: 1000, height: 900 }} cols={3} rowHeight={164}>
                 {items.map((item, idx) => (
-                    <ImageListItem key={item.image}>
-                        <a href={item.href} onClick={() => handleClick(item.href)}
-                           // style={style}
-                            style={{
-                                gridColumnEnd: "span 3",
-                                gridRowEnd: "span 2",
-                            }}
-                        >
-                            <img
-                                width={'150'}
-                                height={'150'}
-                                // width={idx === 0 ? '300' : '250'}
-                                // height={idx === 0 ? '300' : '250'}
-                                src={item.image}
-                                alt={item.title}
-                            />
-                        </a>
+                    <ImageListItem sx={{ gridColumnEnd: "span 3", gridRowEnd: "span 2" }} key={item.image}>
+                        <img
+                            onClick={() => handleClick(item.href)}
+                            width={'150'}
+                            height={'150'}
+                            // width={idx === 0 ? '300' : '250'}
+                            // height={idx === 0 ? '300' : '250'}
+                            src={item.image}
+                            alt={item.title}
+                        />
                     </ImageListItem>
                 ))}
             </ImageList>
