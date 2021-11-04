@@ -6,12 +6,9 @@ import {Container, FormControl, MenuItem, Select} from "@mui/material";
 import Box from "@mui/material/Box";
 
 export default function TopCollectors({ collectors }) {
-    // const [filter, setFilter] = useState('');
-    // const handleChange = (event) => setFilter(event.target.value);
-
-    let withIds = [];
-    collectors.map((c, idx) => withIds.push({...c, id: idx}));
-    let split = chunk(withIds, 3);
+    const withIds = [];
+    collectors.map((c, idx) => withIds.push({ ...c, id: idx }));
+    const split = chunk(withIds, 3);
 
     return (
         <Container maxWidth="xl">
