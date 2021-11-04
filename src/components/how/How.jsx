@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import styles from "../header/Header.module.scss";
 import Box from "@mui/material/Box";
 
-function How ({ title, description, items = [], link }) {
+export default function How ({ title, description, items = [], link }) {
     return (
         <Box sx={{ flexGrow: 1 }} className={styles.search__bar}>
             <h1>
@@ -28,5 +28,3 @@ function How ({ title, description, items = [], link }) {
         </Box>
     );
 }
-
-export default How;

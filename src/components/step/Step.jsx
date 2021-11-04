@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from '../how/Step.module.scss';
 
-function Step  ({ number, title, description })  {
+export default function Step ({ number, title, description })  {
     return (
         <div className={styles.blurred}>
             <h3>
@@ -16,4 +15,3 @@ function Step  ({ number, title, description })  {
     );
 }
 
-export default Step;
