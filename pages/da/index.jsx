@@ -1,6 +1,7 @@
 import React from 'react';
 import Featured from "../../src/components/featured/Featured";
 import CollectorColumn from "../../src/components/collectors/CollectorColumn";
+import TopCollectors from "../../src/components/collectors/TopCollectors";
 
 const Index = props => {
     const steps = [
@@ -84,13 +85,47 @@ const Index = props => {
             verified: true,
             id: 142
         }
-
     ]
+
+    let collectors = [
+        {
+            name: 'asen 1',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 2',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 3',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 4',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 5',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+    ]
+
     return (
         <div>
-            <CollectorColumn items={items}/>
+            {/*<CollectorColumn items={items}/>*/}
             {/*<Featured items={items}/>*/}
             {/*<Featured {...items}/>*/}
+            <TopCollectors collectors={collectors}/>
         </div>
         // <How {...how} />
     );
