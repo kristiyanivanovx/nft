@@ -5,14 +5,14 @@ import Box from "@mui/material/Box";
 // info: it seems like tests don't work with either
 // locally, it works with each one of the three ways to import
 // import { chunk } from 'lodash';
-// import chunk  from 'lodash.chunk';
-import _ from 'lodash';
+import chunk  from 'lodash.chunk';
+// import _ from 'lodash';
 import CollectorColumn from "./CollectorColumn";
 
 export default function TopCollectors({ collectors }) {
     const withIds = [];
     collectors.map((c, idx) => withIds.push({ ...c, id: idx }));
-    const split = _.chunk(withIds, 3);
+    const split = chunk(withIds, 3);
 
     return (
         <Container maxWidth="xl">
