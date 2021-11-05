@@ -36,7 +36,9 @@ export default function TopCollectors({ collectors }) {
             </Box>
 
             {
-                split.map((group, idx) => <CollectorColumn key={idx} items={group} />)
+                split.map((group, idx) => <div>
+                    <CollectorColumn key={idx} items={group} />
+                </div>)
             }
         </Container>
     );
