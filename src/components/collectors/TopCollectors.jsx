@@ -1,9 +1,13 @@
 import React from "react";
-import { chunk } from 'lodash';
 import Collector from "./Collector";
 import Grid from "@mui/material/Grid";
 import {Container, FormControl, MenuItem, Select} from "@mui/material";
 import Box from "@mui/material/Box";
+
+// tests don't work with either the one or the other
+// locally, it works with both
+// import { chunk } from 'lodash';
+import chunk  from 'lodash.chunk';
 
 export default function TopCollectors({ collectors }) {
     const withIds = [];
