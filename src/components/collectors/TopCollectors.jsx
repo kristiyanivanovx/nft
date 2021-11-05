@@ -8,11 +8,21 @@ import Box from "@mui/material/Box";
 // locally, it works with both
 // import { chunk } from 'lodash';
 import chunk  from 'lodash.chunk';
+import CollectorColumn from "./CollectorColumn";
 
 export default function TopCollectors({ collectors }) {
     const withIds = [];
     collectors.map((c, idx) => withIds.push({ ...c, id: idx }));
     const split = chunk(withIds, 3);
+
+    let childs = [];
+    split.map((group) => (
+        group.map((collector, index) => (
+            childs.push(<Grid item xs={2} sm={4} md={4} key={index}>
+                <Collector item={collector} />
+            </Grid>)
+        ))
+    ))
 
     return (
         <Container maxWidth="xl">
@@ -35,15 +45,14 @@ export default function TopCollectors({ collectors }) {
             </Box>
 
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                {
-                    split.map((group) => (
-                        group.map((collector, index)=> (
-                            <Grid item xs={2} sm={4} md={4} key={index}>
-                                <Collector item={collector} />
-                            </Grid>
-                        ))
-                    ))
-                }
+                <CollectorColumn items={childs} />
+                        {/*split.map((group) => (*/}
+                        {/*    group.map((collector, index)=> (*/}
+                        {/*        <Grid item xs={2} sm={4} md={4} key={index}>*/}
+                        {/*            <Collector item={collector} />*/}
+                        {/*         </Grid>*/}
+                        {/*     ))*/}
+                        {/* ))*/}
             </Grid>
         </Container>
     );
