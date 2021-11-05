@@ -118,6 +118,36 @@ const Index = props => {
             avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
             verified: true,
         },
+        {
+            name: 'asen 6',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 7',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 8',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 9',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
+        {
+            name: 'asen 10',
+            nftsCount: 123,
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6g1LiGfSUXH89e_5Q8SwrZu6n-4nDFMtAy5R2PzDRVH80Qi93tEa5NvKZi1KN42nuhE&usqp=CAU',
+            verified: true,
+        },
     ]
 
     return (
